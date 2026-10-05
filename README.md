@@ -43,3 +43,19 @@ Para previsualizar o modificar el sitio en tu máquina:
    ```bash
    git clone [https://github.com/tu-usuario/bytesac-landing.git](https://github.com/tu-usuario/bytesac-landing.git)
    cd bytesac-landing
+   Abrir en el navegador:
+
+Podés hacer doble clic sobre el archivo index.html.
+
+O abrir el proyecto en Visual Studio Code e iniciar Live Server (Alt + L Alt + O) / Live Preview.
+
+📬 Contacto & Redes Oficiales
+WhatsApp Directo: +54 381 5737019
+
+Instagram: @bytesac
+
+Facebook: ByteSac
+
+Ubicación: Tucumán, Argentina
+
+Desarrollado con dedicación por ByteSac.
