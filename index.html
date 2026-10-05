@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html lang="es" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ByteSac | Diagnóstico claro. Soluciones reales.</title>
+
+    <meta name="description" content="Soluciones tecnológicas para PyMEs y profesionales: Desarrollo Web, Chatbots, Automatización y Soporte Técnico Integral.">
+
+    
+
+    <!-- Tailwind CSS CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+    <!-- Configuración de Colores Corporativos -->
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        brand: {
+
+                            50: '#eff6ff',
+
+                            100: '#dbeafe',
+
+                            500: '#3b82f6',
+
+                            600: '#2563eb',
+
+                            700: '#1d4ed8',
+
+                            900: '#1e3a8a',
+
+                            dark: '#0f172a'
+
+                        }
+
+                    },
+
+                    fontFamily: {
+
+                        sans: ['Inter', 'sans-serif'],
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    
+
+    <!-- Google Fonts: Inter -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Lucide Icons -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 1. HEADER / NAVBAR -->
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+
+                <div class="flex items-center gap-3">
+
+                    <div class="bg-brand-600 text-white p-2 rounded-xl shadow-md">
+
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span class="text-2xl font-extrabold text-slate-900 tracking-tight">Byte<span class="text-brand-600">Sac</span></span>
+
+                        <p class="text-xs text-slate-500 font-medium hidden sm:block">Diagnóstico claro. Soluciones reales.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Navigation Links -->
+
+                <nav class="hidden md:flex items-center space-x-8">
+
+                    <a href="#servicios" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Servicios</a>
+
+                    <a href="#diferencial" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Nosotros</a>
+
+                    <a href="#faq" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Preguntas Frecuentes</a>
+
+                </nav>
+
+                <!-- CTA WhatsApp Button -->
+
+                <div class="flex items-center gap-4">
+
+                    <a href="https://wa.me/543815737019?text=Hola%20ByteSac,%20quisiera%20consultar%20por%20sus%20servicios" 
+
+                       target="_blank" 
+
+                       rel="noopener noreferrer"
+
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5">
+
+                        <i data-lucide="message-square" class="w-4 h-4"></i>
+
+                        <span>WhatsApp</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- 2. HERO SECTION -->
+
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-white to-slate-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-100 mb-6">
+
+                    <i data-lucide="zap" class="w-3.5 h-3.5"></i> Tecnologias Modernas para PyMEs
+
+                </span>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+
+                    Comenzá a aprovechar las <span class="text-brand-600">herramientas modernas</span>
+
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed mb-8">
+
+                    Optimizamos la infraestructura digital y de cómputo de PyMEs, comercios y profesionales. Diagnósticos precisos y soluciones efectivas sin complicaciones.
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                    <a href="https://wa.me/543815737019?text=Hola%20ByteSac,%20quiero%20solicitar%20un%20diagnóstico%20sin%20cargo" 
+
+                       target="_blank"
+
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-brand-500/25 transition-all transform hover:-translate-y-0.5">
+
+                        <span>Solicitar Diagnóstico Sin Cargo</span>
+
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+
+                    </a>
+
+                    <a href="#servicios" 
+
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-8 py-4 rounded-xl transition-all">
+
+                        Ver Servicios
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3. SERVICIOS PRINCIPALES -->
+
+    <section id="servicios" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Servicios Especializados</h2>
+
+                <p class="text-slate-600">Soluciones integrales diseñadas para hacer crecer tu negocio y mantener tus operaciones siempre activas.</p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Card 1: Desarrollo Web -->
+
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-6">
+
+                            <i data-lucide="layout" class="w-6 h-6"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Desarrollo Web</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Presencia digital profesional ajustada a las necesidades de tu marca para convertir visitantes en clientes.
+
+                        </p>
+
+                        <ul class="space-y-2.5 text-sm text-slate-700 font-medium mb-6">
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Sitios institucionales modernos</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Catálogos interactivos online</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Tiendas virtuales (E-commerce)</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2: Automatizaciones & Chatbots -->
+
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+
+                            <i data-lucide="bot" class="w-6 h-6"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Automatizaciones & Chatbots</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Agilizá tus procesos comerciales y optimizá la comunicación con tus clientes potenciales.
+
+                        </p>
+
+                        <ul class="space-y-2.5 text-sm text-slate-700 font-medium mb-6">
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Atención automatizada 24/7</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Gestión y captura de leads</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Respuestas e integración de mensajes</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3: Soporte Técnico & PC -->
+
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-6">
+
+                            <i data-lucide="wrench" class="w-6 h-6"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Soporte Técnico & PC</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Mantenimiento y reparación para garantizar que tus herramientas de trabajo operen sin interrupciones.
+
+                        </p>
+
+                        <ul class="space-y-2.5 text-sm text-slate-700 font-medium mb-6">
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Mantenimiento preventivo</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Reparación de equipos y hardware</li>
+
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i> Optimización y limpieza de software</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 4. SECCIÓN DIFERENCIAL -->
+
+    <section id="diferencial" class="py-20 bg-slate-900 text-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto mb-16">
+
+                <h2 class="text-3xl font-bold mb-4">¿Por qué elegir ByteSac?</h2>
+
+                <p class="text-slate-400">Nos enfocamos en brindar soluciones claras, sin tecnicismos innecesarios y orientadas a resultados concretos.</p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50">
+
+                    <div class="w-12 h-12 bg-brand-500/10 text-brand-400 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+
+                    </div>
+
+                    <h3 class="text-lg font-semibold mb-2">Hardware + Software</h3>
+
+                    <p class="text-sm text-slate-400">Cobertura integral. Resolvemos desde fallas físicas de equipamiento hasta la implementación de software avanzado.</p>
+
+                </div>
+
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50">
+
+                    <div class="w-12 h-12 bg-brand-500/10 text-brand-400 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i data-lucide="users" class="w-6 h-6"></i>
+
+                    </div>
+
+                    <h3 class="text-lg font-semibold mb-2">Atención Personalizada</h3>
+
+                    <p class="text-sm text-slate-400">Trato directo y continuo. Explicaciones claras sobre el diagnóstico y el avance de los proyectos.</p>
+
+                </div>
+
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50">
+
+                    <div class="w-12 h-12 bg-brand-500/10 text-brand-400 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i data-lucide="truck" class="w-6 h-6"></i>
+
+                    </div>
+
+                    <h3 class="text-lg font-semibold mb-2">Servicio a Domicilio</h3>
+
+                    <p class="text-sm text-slate-400">Retiro y entrega de equipos en tu comercio u oficina para que no pierdas tiempo de trabajo.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 5. PREGUNTAS FRECUENTES (FAQ) -->
+
+    <section id="faq" class="py-20 bg-slate-50">
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Preguntas Frecuentes</h2>
+
+                <p class="text-slate-600">Resolvemos tus dudas sobre nuestra forma de trabajar.</p>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <details class="group bg-white rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+
+                    <summary class="flex items-center justify-between cursor-pointer">
+
+                        <h3 class="text-base font-semibold text-slate-900">¿Cómo funciona la modalidad de trabajo y diagnóstico?</h3>
+
+                        <span class="ml-4 flex-shrink-0 text-slate-400 group-open:-rotate-180 transition-transform">
+
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+
+                        </span>
+
+                    </summary>
+
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+
+                        Evaluamos tu requerimiento o equipo sin costo inicial. Generamos un informe detallado con la solución propuesta y el presupuesto exacto antes de realizar cualquier trabajo.
+
+                    </p>
+
+                </details>
+
+                <details class="group bg-white rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+
+                    <summary class="flex items-center justify-between cursor-pointer">
+
+                        <h3 class="text-base font-semibold text-slate-900">¿Cuáles son los tiempos de entrega promedio?</h3>
+
+                        <span class="ml-4 flex-shrink-0 text-slate-400 group-open:-rotate-180 transition-transform">
+
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+
+                        </span>
+
+                    </summary>
+
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+
+                        Para soporte técnico de PC, los tiempos varían entre 24 y 48 horas. En desarrollos web y automatizaciones, los plazos se definen en el cronograma inicial según la complejidad del proyecto.
+
+                    </p>
+
+                </details>
+
+                <details class="group bg-white rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
+
+                    <summary class="flex items-center justify-between cursor-pointer">
+
+                        <h3 class="text-base font-semibold text-slate-900">¿Ofrecen soporte y mantenimiento post-entrega?</h3>
+
+                        <span class="ml-4 flex-shrink-0 text-slate-400 group-open:-rotate-180 transition-transform">
+
+                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+
+                        </span>
+
+                    </summary>
+
+                    <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+
+                        Sí, todos nuestros desarrollos e intervenciones cuentan con período de garantía y planes opcionales de mantenimiento mensual para asegurar el correcto funcionamiento.
+
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 6. FOOTER & CONTACTO DIRECTO -->
+
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+
+                <!-- Columna 1: Brand -->
+
+                <div class="md:col-span-2">
+
+                    <div class="flex items-center gap-2 text-white font-bold text-xl mb-4">
+
+                        <i data-lucide="cpu" class="w-6 h-6 text-brand-500"></i>
+
+                        <span>ByteSac</span>
+
+                    </div>
+
+                    <p class="text-sm text-slate-400 max-w-sm mb-4">
+
+                        Diagnóstico claro. Soluciones reales. Optimización tecnológica y soporte especializado para PyMEs y profesionales.
+
+                    </p>
+
+                </div>
+
+                <!-- Columna 2: Contacto Directo -->
+
+                <div>
+
+                    <h4 class="text-white text-sm font-semibold mb-4">Contacto Directo</h4>
+
+                    <ul class="space-y-3 text-sm">
+
+                        <li class="flex items-center gap-2">
+
+                            <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>
+
+                            <a href="https://wa.me/543815737019" class="hover:text-white transition-colors">+54 381 5737019</a>
+
+                        </li>
+
+                        <li class="flex items-center gap-2">
+
+                            <i data-lucide="map-pin" class="w-4 h-4 text-brand-500"></i>
+
+                            <span>Tucumán, Argentina</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Columna 3: Redes Sociales -->
+<div>
+    <h4 class="text-white text-sm font-semibold mb-4">Síguenos</h4>
+    <div class="flex space-x-4">
+        <!-- Icono Instagram (SVG Inline) -->
+        <a href="https://www.instagram.com/bytesac" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Instagram de ByteSac"
+           class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition-colors">
+            <svg class="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+
+        <!-- Icono Facebook (SVG Inline) -->
+        <a href="https://www.facebook.com/share/1LfBnCcVfY/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Facebook de ByteSac"
+           class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-brand-600 hover:text-white transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+            <div class="pt-8 border-t border-slate-800 text-xs text-center text-slate-500">
+
+                <p>&copy; ByteSac. Todos los derechos reservados.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Inicialización de Lucide Icons -->
+
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+</body>
+
+</html>
