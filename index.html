@@ -7,7 +7,7 @@
     <title>ByteSac | Diagnóstico claro. Soluciones reales.</title>
     <meta name="description" content="Soluciones tecnológicas para PyMEs y profesionales: Desarrollo Web, Chatbots, Automatización y Soporte Técnico Integral.">
     
-    <!-- Hoja de Estilos CSS de Tailwind (Sin scripts de compilación en cliente) -->
+    <!-- Hoja de Estilos CSS de Tailwind -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
     
     <!-- Google Fonts: Inter -->
@@ -18,7 +18,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Estilos de color personalizados extraídos del logo -->
+    <!-- Estilos de color personalizados del logo -->
     <style>
         :root {
             --brand-blue: #0066ff;
@@ -39,15 +39,20 @@
         .hover\:bg-accent-green-hover:hover { background-color: var(--accent-green-hover); }
         .text-accent-green { color: var(--accent-green); }
 
-        .bg-brand-light { background-color: #f0f6ff; }
-        .border-brand-light { border-color: #e0edff; }
+        .bg-brand-light { background-color: #eff6ff; }
+        .border-brand-light { border-color: #dbeafe; }
+
+        /* Forma curva moderna para el contenedor de la imagen */
+        .hero-img-mask {
+            border-radius: 2rem 2rem 2rem 6rem;
+        }
     </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- 1. HEADER / NAVBAR -->
-    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-filter backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
@@ -77,34 +82,82 @@
         </div>
     </header>
 
-    <!-- 2. HERO SECTION -->
-    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-white via-gray-50 to-gray-100">
+    <!-- 2. HERO SECTION DIVIDIDA (Estilo de la referencia) -->
+    <section class="relative overflow-hidden pt-12 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-br from-blue-50/60 via-white to-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto">
-                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-light text-brand-blue border border-brand-light mb-6">
-                    <i data-lucide="zap" class="w-3.5 h-3.5 text-accent-green"></i> Tecnologías Modernas para PyMEs
-                </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark tracking-tight leading-tight mb-6">
-                    Comenzá a aprovechar las <span class="text-brand-blue">herramientas modernas</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-600 font-normal leading-relaxed mb-8">
-                    Optimizamos la infraestructura digital y de cómputo de PyMEs, comercios y profesionales. Diagnósticos precisos y soluciones efectivas sin complicaciones.
-                </p>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Columna Izquierda: Texto & CTAs -->
+                <div class="lg:col-span-7 text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-light text-brand-blue border border-brand-light mb-6">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 text-accent-green"></i> Tecnologías Modernas para PyMEs
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark tracking-tight leading-tight mb-6">
+                        Impulsamos la <span class="text-brand-blue">eficiencia tecnológica</span> de tu negocio
+                    </h1>
+                    <p class="text-lg text-gray-600 font-normal leading-relaxed mb-8 max-w-2xl">
+                        Optimizamos la infraestructura digital y de cómputo de PyMEs, comercios y profesionales. Diagnósticos precisos, páginas web modernas y soporte técnico real.
+                    </p>
 
-                <!-- CTA Principal -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto sm:max-w-none">
-                    <a href="https://wa.me/543815737019?text=Hola%20ByteSac,%20quiero%20solicitar%20un%20diagn%C3%B3stico%20sin%20cargo" 
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer">
-                        <span>Solicitar Diagnóstico Sin Cargo</span>
-                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#servicios" 
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 font-semibold px-8 py-4 rounded-xl transition-all">
-                        Ver Servicios
-                    </a>
+                    <!-- Botones de Acción -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <a href="https://wa.me/543815737019?text=Hola%20ByteSac,%20quiero%20solicitar%20un%20diagn%C3%B3stico%20sin%20cargo" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5">
+                            <span>Solicitar Diagnóstico Sin Cargo</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#servicios" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 font-semibold px-8 py-4 rounded-xl transition-all">
+                            Ver Servicios
+                        </a>
+                    </div>
+
+                    <!-- Métricas breves -->
+                    <div class="mt-10 pt-8 border-t border-gray-200/80 grid grid-cols-3 gap-4">
+                        <div>
+                            <p class="text-2xl font-bold text-brand-dark">24/48h</p>
+                            <p class="text-xs text-gray-500 font-medium">Tiempo de entrega PC</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-brand-dark">100%</p>
+                            <p class="text-xs text-gray-500 font-medium">Atención personalizada</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-brand-dark">$0</p>
+                            <p class="text-xs text-gray-500 font-medium">Diagnóstico inicial</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Columna Derecha: Imagen Dividida con Borde Curvo -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Adorno de fondo azul -->
+                        <div class="absolute -top-4 -left-4 w-72 h-72 bg-blue-200/50 rounded-full filter blur-2xl -z-10"></div>
+                        <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-emerald-200/40 rounded-full filter blur-2xl -z-10"></div>
+
+                        <!-- Tarjeta con foto e insignia -->
+                        <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Soporte y tecnología ByteSac" 
+                                 class="w-full h-[400px] object-cover hero-img-mask">
+                            
+                            <!-- Insignia flotante estilo Ekobyte -->
+                            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg border border-gray-100 flex items-center gap-3">
+                                <div class="w-12 h-12 bg-green-50 text-accent-green rounded-xl flex items-center justify-center">
+                                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-wider">Garantía ByteSac</p>
+                                    <p class="text-sm font-extrabold text-brand-dark">Servicio garantizado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -174,35 +227,56 @@
         </div>
     </section>
 
-    <!-- 4. SECCIÓN DIFERENCIAL -->
+    <!-- 4. SECCIÓN DIFERENCIAL CON IMAGEN Y COLOR SÓLIDO -->
     <section id="diferencial" class="py-20 bg-brand-dark text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold mb-4">¿Por qué elegir ByteSac?</h2>
-                <p class="text-gray-400">Nos enfocamos en brindar soluciones claras, sin tecnicismos innecesarios y orientadas a resultados concretos.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-6 bg-gray-800 rounded-xl border border-gray-700">
-                    <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="shield-check" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Hardware + Software</h3>
-                    <p class="text-sm text-gray-400">Cobertura integral. Resolvemos desde fallas físicas de equipamiento hasta la implementación de software avanzado.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Imagen secundaria izquierda -->
+                <div class="lg:col-span-5">
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" 
+                         alt="Trabajo en equipo ByteSac" 
+                         class="rounded-3xl shadow-2xl w-full h-[350px] object-cover border border-gray-700">
                 </div>
-                <div class="p-6 bg-gray-800 rounded-xl border border-gray-700">
-                    <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="users" class="w-6 h-6"></i>
+
+                <!-- Contenido diferencial derecha -->
+                <div class="lg:col-span-7">
+                    <h2 class="text-3xl font-bold mb-4">¿Por qué elegir ByteSac?</h2>
+                    <p class="text-gray-400 mb-8">Nos enfocamos en brindar soluciones claras, sin tecnicismos innecesarios y orientadas a resultados concretos para comercios y profesionales.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-blue/20 text-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-1">Hardware + Software</h3>
+                                <p class="text-sm text-gray-400">Cobertura integral. Resolvemos desde fallas físicas de equipamiento hasta el desarrollo de plataformas web.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-blue/20 text-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-1">Atención Personalizada</h3>
+                                <p class="text-sm text-gray-400">Trato directo y transparente. Explicaciones sencillas sobre el diagnóstico y avance de cada proyecto.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-brand-blue/20 text-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="truck" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-1">Servicio a Domicilio</h3>
+                                <p class="text-sm text-gray-400">Retiro y entrega de equipos en tu comercio u oficina para que no pierdas horas operativas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Atención Personalizada</h3>
-                    <p class="text-sm text-gray-400">Trato directo y continuo. Explicaciones claras sobre el diagnóstico y el avance de los proyectos.</p>
                 </div>
-                <div class="p-6 bg-gray-800 rounded-xl border border-gray-700">
-                    <div class="w-12 h-12 bg-brand-light text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="truck" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Servicio a Domicilio</h3>
-                    <p class="text-sm text-gray-400">Retiro y entrega de equipos en tu comercio u oficina para que no pierdas tiempo de trabajo.</p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -260,7 +334,7 @@
                 <!-- Columna 1: Brand -->
                 <div class="md:col-span-2">
                     <div class="mb-4">
-                        <img src="logo.png" alt="ByteSac" class="h-11 w-auto object-contain">
+                        <img src="logo.png" alt="ByteSac" class="h-10 w-auto object-contain filter brightness-0 invert">
                     </div>
                     <p class="text-sm text-gray-400 max-w-sm mb-4">
                         Diagnóstico claro. Soluciones reales. Optimización tecnológica y soporte especializado para PyMEs y profesionales.
